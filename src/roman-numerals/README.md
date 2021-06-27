@@ -31,3 +31,45 @@ A numeral is formed by a sequence of these symbols, where each symbol can be use
 For example, 11 is `XI`, `98` is `XCVIII`, `99` is `XCIX` and 1944 is `MCMXLIV`.
 
 [roman-numerals]: https://en.wikipedia.org/wiki/Roman_numerals
+
+
+
+
+
+
+
+create sum variable to store sum
+for each char in str
+    if char is specialCase
+        store in deficit
+    else 
+        if deficit exist
+            if deficit >= charNumber
+                sum += (deficit+charNumber)
+            else deficit < charNumber
+                sum += (charNumber - sum)
+            set deficit to zero
+        sum += charNumber
+return sum
+
+create sum = 0;
+for i=0 to str.length-1
+    currentElemStr = str[i]
+    if currentElemStr is in special cases
+        let nextElemStr = ( i+1 < str.length) ? str[i+1] : ""
+        if currentElemNo >= nextElemNo
+            sum += currentElemNo
+        else
+            sum -= currentElemNo
+            
+return sum
+
+
+    
+    
+
+
+    
+
+    get equivalent number from roman mapping
+    add it to sum

@@ -6,6 +6,6 @@ There are an equal number of opening and closing brackets of each type. Each bra
 
 While a specific bracket is open, every other enclosed pair of brackets that is opened should be closed before the encompassing bracket closes.
 
-For example, `{[()[]]()}()` is valid, but `[(])` is not. Given a string, your function should determine if it is valid or not.
+For example, `{ [ ( ) [ ] ]()}()` is valid, but `[(])` is not. Given a string, your function should determine if it is valid or not.
 
 Your function should output `valid`, or `invalid` depending on the given string.

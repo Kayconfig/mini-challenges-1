@@ -4,7 +4,7 @@
   "description": "Lab 0 - challenges",
   "main": "jest",
   "scripts": {
-    "test": "jest"
+    "test": "jest "
   },
   "keywords": [],
   "author": "",
